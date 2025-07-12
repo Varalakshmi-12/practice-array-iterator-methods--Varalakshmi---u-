@@ -38,3 +38,47 @@ For this activity, you will create your own repository to store your code:
 5. Start working on the code.
 Submission
 Submit the url for your GitHub repo in the field bel
+
+
+//Task1:
+
+let favoriteCities = ["Hyderabad", "Paris", "Ooty", "New York", "Oklahoma"];
+    favoriteCities.forEach(city => {
+        console.log(city.toUpperCase());
+
+    });/*
+HYDERABAD
+PARIS
+OOTY
+NEW YORK
+OKLAHOMA */
+
+//Task2:
+
+let numbers = [1,2,3,4,5];
+let squares = numbers.map(num => num * num);
+console.log(squares);/*
+
+$ node main.js
+[ 1, 4, 9, 16, 25 ] */
+
+//Task3
+
+let scores = [85, 42, 90, 75, 30, 100];
+let highScores = scores.filter(score => score >= 80);
+console.log(highScores);/*
+
+$ node main.js
+[ 85, 90, 100 ] */
+
+//Task4:
+
+let favoriteFood = ["Chicken","Pizza","Parota","Dosa","Idly"];
+let foodMoreThan4Letters = favoriteFood.find(food => food.length >= 4);
+console.log(foodMoreThan4Letters);
+let indexOfFood = favoriteFood.findIndex(food => food.length >= 4);
+console.log(indexOfFood); /*
+
+$ node main.js
+Chicken
+0  */
